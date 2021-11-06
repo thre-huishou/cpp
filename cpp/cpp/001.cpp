@@ -12,8 +12,8 @@ using namespace std;
 //3、标识符第一个不可以是数字；
 //4、标识符区分大小写;
 
-int main()
-{
+//int main()
+//{
 	//int a_1 = 10;
 	//int A_1 = 20;
 	//int _a1 = 3;
@@ -61,16 +61,48 @@ int main()
 	//	cout << arr[j]<<"->";
 	//}
 
-	int arr[2][3]=
-	{
-		{1,2,3},
-		{4,5,6}
-	};
-	cout << arr << "->" << arr + 1 << endl;
-	cout << &arr << "->" << &arr + 1 << endl;
-	cout << arr[0] << "->" << arr[0] + 1 << endl;
-	cout << &arr[0] << "->" << &arr[0] + 1 << endl;
-	 
-	system("color 0A");//改变控制台背景与前景
- 	return 0;
+//	int arr[2][3]=
+//	{
+//		{1,2,3},
+//		{4,5,6}
+//	};
+//	cout << arr << "->" << arr + 1 << endl;
+//	cout << &arr << "->" << &arr + 1 << endl;
+//	cout << arr[0] << "->" << arr[0] + 1 << endl;
+//	cout << &arr[0] << "->" << &arr[0] + 1 << endl;
+//	 
+//	system("color 0A");//改变控制台背景与前景
+// 	return 0;
+//}
+
+struct Stu
+{
+	string name;
+	int age;
+	int score;
+};
+
+void init(Stu* ps)
+{
+	ps->name = "zhangsan";
+	ps->age = 18;
+	ps->score = 20;
+}
+
+int main()
+{
+	//Stu s1 = { "zhangsan",18,100 };
+	//cout << "xingming:" << s1.name << "ninaling:" << s1.age << "fenshu:" << s1.score << endl;
+
+	//Stu s[3] = { {"zhangsan",18,100},{"lisi",19,99},{"wangwu",17,98} };
+	//for (int i = 0; i < 3; i++)
+	//{
+	//	cout << "xingming: " << s[i].name << "ninaling:" << s[i].age << "fenshu:" << s[i].score << endl;
+	//}
+	//Stu * ps1 = s;
+	//cout << "xingming: " << ps1->name << "ninaling:" << ps1->age<< "fenshu:" << ps1->score << endl;
+	Stu s1; 
+	init(&s1);
+	cout << "xingming: " << s1.name << "ninaling:" << s1.age << "fenshu:" << s1.score << endl;
+	return 0;
 }

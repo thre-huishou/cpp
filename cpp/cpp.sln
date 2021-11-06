@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1433
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp", "cpp\cpp.vcxproj", "{AE345892-86EF-466A-A296-5E5B483F04D3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "通讯录", "通讯录\通讯录.vcxproj", "{271D775F-258C-40D5-BD96-A2B8656F38AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{AE345892-86EF-466A-A296-5E5B483F04D3}.Release|x64.Build.0 = Release|x64
 		{AE345892-86EF-466A-A296-5E5B483F04D3}.Release|x86.ActiveCfg = Release|Win32
 		{AE345892-86EF-466A-A296-5E5B483F04D3}.Release|x86.Build.0 = Release|Win32
+		{271D775F-258C-40D5-BD96-A2B8656F38AC}.Debug|x64.ActiveCfg = Debug|x64
+		{271D775F-258C-40D5-BD96-A2B8656F38AC}.Debug|x64.Build.0 = Debug|x64
+		{271D775F-258C-40D5-BD96-A2B8656F38AC}.Debug|x86.ActiveCfg = Debug|Win32
+		{271D775F-258C-40D5-BD96-A2B8656F38AC}.Debug|x86.Build.0 = Debug|Win32
+		{271D775F-258C-40D5-BD96-A2B8656F38AC}.Release|x64.ActiveCfg = Release|x64
+		{271D775F-258C-40D5-BD96-A2B8656F38AC}.Release|x64.Build.0 = Release|x64
+		{271D775F-258C-40D5-BD96-A2B8656F38AC}.Release|x86.ActiveCfg = Release|Win32
+		{271D775F-258C-40D5-BD96-A2B8656F38AC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
