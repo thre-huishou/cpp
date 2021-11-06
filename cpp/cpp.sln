@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp", "cpp\cpp.vcxproj", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "通讯录", "通讯录\通讯录.vcxproj", "{271D775F-258C-40D5-BD96-A2B8656F38AC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp核心", "cpp核心\cpp核心.vcxproj", "{B30DAD85-C354-47B2-A3E1-CC183E3A95EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{271D775F-258C-40D5-BD96-A2B8656F38AC}.Release|x64.Build.0 = Release|x64
 		{271D775F-258C-40D5-BD96-A2B8656F38AC}.Release|x86.ActiveCfg = Release|Win32
 		{271D775F-258C-40D5-BD96-A2B8656F38AC}.Release|x86.Build.0 = Release|Win32
+		{B30DAD85-C354-47B2-A3E1-CC183E3A95EE}.Debug|x64.ActiveCfg = Debug|x64
+		{B30DAD85-C354-47B2-A3E1-CC183E3A95EE}.Debug|x64.Build.0 = Debug|x64
+		{B30DAD85-C354-47B2-A3E1-CC183E3A95EE}.Debug|x86.ActiveCfg = Debug|Win32
+		{B30DAD85-C354-47B2-A3E1-CC183E3A95EE}.Debug|x86.Build.0 = Debug|Win32
+		{B30DAD85-C354-47B2-A3E1-CC183E3A95EE}.Release|x64.ActiveCfg = Release|x64
+		{B30DAD85-C354-47B2-A3E1-CC183E3A95EE}.Release|x64.Build.0 = Release|x64
+		{B30DAD85-C354-47B2-A3E1-CC183E3A95EE}.Release|x86.ActiveCfg = Release|Win32
+		{B30DAD85-C354-47B2-A3E1-CC183E3A95EE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
