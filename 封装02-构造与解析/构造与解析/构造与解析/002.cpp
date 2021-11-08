@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<iostream>
+#include<string>
 using namespace std;
 
 //class Person
@@ -177,27 +178,29 @@ using namespace std;
 
 
 //初始化列表
+//
+//#include<string>
+//class Person
+//{
+//public:
+//	Person():m_age(18),m_height(180),m_name("zhangsan")
+//	{
+//		cout << "默认构造函数" << endl;
+//	}
+//	~Person()
+//	{
+//		cout << "默认析构函数" << endl;
+//	}
+//	int m_age;
+//	int m_height;
+//	string m_name;
+//};
+//
+//int main()
+//{
+//	Person p1;
+//	cout << "年龄："<<p1.m_age << "身高："<<p1.m_height <<"姓名："<< p1.m_name << endl;
+//	return 0;
+//}
 
-#include<string>
-class Person
-{
-public:
-	Person():m_age(18),m_height(180),m_name("zhangsan")
-	{
-		cout << "默认构造函数" << endl;
-	}
-	~Person()
-	{
-		cout << "默认析构函数" << endl;
-	}
-	int m_age;
-	int m_height;
-	string m_name;
-};
 
-int main()
-{
-	Person p1;
-	cout << "年龄："<<p1.m_age << "身高："<<p1.m_height <<"姓名："<< p1.m_name << endl;
-	return 0;
-}
