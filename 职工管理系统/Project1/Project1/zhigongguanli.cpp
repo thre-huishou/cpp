@@ -38,6 +38,13 @@ guanlixitong::~guanlixitong()
 {
 	if (this->m_emparray != NULL)
 	{
+		for (int i = 0; i < this->m_empnum; i++)
+		{
+			if (this->m_emparray[i] != NULL)
+			{
+				delete this->m_emparray[i];
+			}
+		}
 		delete[] this->m_emparray;
 		this->m_emparray = NULL;
 	}
@@ -408,12 +415,32 @@ void guanlixitong::sort_emp()
 
 void guanlixitong::clear_emp()
 {
-	delete[] this->m_emparray;
-	this->m_emparray = NULL;
-	this->m_empnum = 0;
-	this->is_empty = true;
-	this->save();
-	cout << "清零成功" << endl;
+	cout << "确定清空？ " << endl;
+	cout << "1、确定" << endl;
+	cout << "2、返回" << endl;
+	int num = 0;
+	cin >> num;
+	if (num == 0)
+	{
+		return;
+	}
+	else
+	{
+		ofstream ofs("111.txt", ios::trunc);
+		ofs.close();
+		if (this->m_emparray != NULL)
+		{
+			for (int i = 0; i < this->m_empnum; i++)
+			{
+				delete this->m_emparray[i];
+				this->m_emparray[i] = NULL;
+			}
+		}
+		delete[] this->m_emparray;
+		this->m_emparray = NULL;
+		this->is_empty = true;
+		cout << "清空成功" << endl;
+	}
 	system("pause");
 	system("cls");
 }
