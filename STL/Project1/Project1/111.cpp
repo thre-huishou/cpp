@@ -50,55 +50,105 @@ using namespace std;
 //}
 
 //vector存放自定义数据类型
-class Person
-{
-public:
-	Person(string name, int age) :m_name(name), m_age(age)
-	{
+//class Person
+//{
+//public:
+//	Person(string name, int age) :m_name(name), m_age(age)
+//	{
+//
+//	}
+//
+//	string m_name;
+//	int m_age;
+//};
+//ostream& operator<<(ostream &cout, Person p)
+//{
+//	cout << "姓名：" << p.m_name << " 年龄:" << p.m_age << endl;
+//	return cout;
+//}
+//
+//void printperson(Person &p)
+//{
+//	cout << "姓名：" << p.m_name << " 年龄:" << p.m_age << endl;
+//}
+//
+//int main()
+//{
+//	vector<Person> v;
+//	Person p1("张三",18);
+//	v.push_back(p1);
+//	Person p2("李四", 19);
+//	v.push_back(p2);
+//	Person p3("王二", 20);
+//	v.push_back(p3);
+//	Person p4("麻子", 21);
+//	v.push_back(p4);
+//
+//	//第一种遍历
+//	vector<Person>::iterator itbegin = v.begin();
+//	vector<Person>::iterator itend = v.end();
+//	while (itbegin != itend)
+//	{
+//		cout << *itbegin << endl;
+//		itbegin++;
+//	}
+//
+//	//第二种遍历
+//	for (vector<Person>::iterator it = v.begin(); it != v.end(); it++)
+//	{
+//		cout << *it << endl;
+//	}
+//	//第3中遍历
+//	/*for_each(v.begin(), v.end(), printperson);*/
+//	return 0;
+//}
 
-	}
 
-	string m_name;
-	int m_age;
-};
-ostream& operator<<(ostream &cout, Person p)
-{
-	cout << "姓名：" << p.m_name << " 年龄:" << p.m_age << endl;
-	return cout;
-}
-
-void printperson(Person &p)
-{
-	cout << "姓名：" << p.m_name << " 年龄:" << p.m_age << endl;
-}
+//vector容器中嵌套vector容器
 
 int main()
 {
-	vector<Person> v;
-	Person p1("张三",18);
-	v.push_back(p1);
-	Person p2("李四", 19);
-	v.push_back(p2);
-	Person p3("王二", 20);
-	v.push_back(p3);
-	Person p4("麻子", 21);
-	v.push_back(p4);
+	vector<vector<int>> v;
+	vector<int> v1;
+	v1.push_back(1);
+	v1.push_back(1);
+	v1.push_back(1);
+	v1.push_back(1);
+	vector<int> v2;
+	v2.push_back(2);
+	v2.push_back(2);
+	v2.push_back(2);
+	v2.push_back(2);
+	vector<int> v3;
+	v3.push_back(3);
+	v3.push_back(3);
+	v3.push_back(3);
+	v3.push_back(3);
+	vector<int> v4;
+	v4.push_back(4);
+	v4.push_back(4);
+	v4.push_back(4);
+	v4.push_back(4);
 
-	//第一种遍历
-	vector<Person>::iterator itbegin = v.begin();
-	vector<Person>::iterator itend = v.end();
-	while (itbegin != itend)
-	{
-		cout << *itbegin << endl;
-		itbegin++;
-	}
+	v.push_back(v1);
+	v.push_back(v2);
+	v.push_back(v3);
+	v.push_back(v4);
 
-	//第二种遍历
-	for (vector<Person>::iterator it = v.begin(); it != v.end(); it++)
+
+	vector<vector<int>>::iterator vbegin = v.begin();
+	vector<vector<int>>::iterator vend = v.end();
+	while (vbegin != vend)
 	{
-		cout << *it << endl;
+		vector<int>::iterator vvbegin = (*vbegin).begin();
+		vector<int>::iterator vvend = (*vbegin).end();
+		while (vvbegin != vvend)
+		{
+			cout << *vvbegin;
+			vvbegin++;
+		}
+		cout << endl;
+		vbegin++;
 	}
-	//第3中遍历
-	/*for_each(v.begin(), v.end(), printperson);*/
 	return 0;
 }
