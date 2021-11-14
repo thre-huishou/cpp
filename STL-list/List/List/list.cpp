@@ -187,6 +187,7 @@ bool comparePerson(Person&p1, Person&p2)
 	//按照年龄升序
 	if (p1.m_age == p2.m_age)
 	{
+		//身高降序
 		return p1.m_height > p2.m_height;
 	}
 	else
