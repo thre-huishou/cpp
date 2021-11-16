@@ -4,7 +4,13 @@
 using namespace std;
 #include<vector>
 #include<map>
+#include<string>
 #include"speaker.h"
+#include<numeric>
+#include<algorithm>
+#include<ctime>
+#include<deque>
+#include<fstream>
 
 enum
 {
@@ -40,6 +46,50 @@ public:
 	//存放具体编号以及具体选手容器
 	map<int, Speaker>m_speaker;
 
+	bool fileIsempty;
+
+	map<int, vector<string>> m_his;
 	//存放比赛论数
 	int m_index;
+
+	//创建选手
+	void createspeaker();
+
+	//比赛整个流程
+	void start_speech();
+
+	//抽签
+	void speechdraw();
+
+	//比赛
+	void speech_contest();
+
+	void myprint();
+
+	void mysave();
+
+	void load_history();
+
+	void read_history();
+
+	void myclear();
 };
+
+
+class Greater
+{
+public:
+	bool operator()(double val1, double val2)
+	{
+		return val1 > val2;
+	}
+};
+class myGreater
+{
+public:
+	bool operator()(Speaker&p1, Speaker&p2)
+	{
+		return p1.m_score > p2.m_score;
+	}
+};
+

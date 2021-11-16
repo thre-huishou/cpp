@@ -130,6 +130,9 @@
     <ClInclude Include="speaker.h" />
     <ClInclude Include="speechmanager.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="111.csv" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
